@@ -2,7 +2,7 @@ import os
 
 BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
 
-ADMIN_IDS = [123456789]
+ADMIN_IDS = [6080141947]
 
 COMPLAINT_TYPES = {
     "chiqindi_olinmagan": "🗑 Chiqindi olinmagan",
