@@ -1,9 +1,9 @@
-BOT_TOKEN = "YOUR_BOT_TOKEN_HERE"
+import os
 
-# Admin Telegram ID lari (vergul bilan ajrating)
-ADMIN_IDS = [123456789]  # O'zingizning Telegram ID ingizni kiriting
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
 
-# Murojaat turlari
+ADMIN_IDS = [123456789]
+
 COMPLAINT_TYPES = {
     "chiqindi_olinmagan": "🗑 Chiqindi olinmagan",
     "nogoniy_chiqindi": "♻️ Noto'g'ri chiqindi",
@@ -13,7 +13,6 @@ COMPLAINT_TYPES = {
     "boshqa": "📋 Boshqa muammo",
 }
 
-# Murojaat holatlari
 STATUSES = {
     "yangi": "🆕 Yangi",
     "qabul_qilindi": "✅ Qabul qilindi",
